@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    
+</head>
+<script src="app.js"></script>
+
+<body>
+    <!-- <div class="lastdiv" id="maiiin">history<br></div> -->
+    <div class="">
+        <div class="calculator">
+            <div class="input">
+                <input class="historybar" id="historr" type="text">
+                <input type="text" class="screen" id="input" placeholder="0" />
+                <div class="history-icon">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+
+            </div>
+            <div>
+                <button class="button  operator" onclick="removeAll()">AC</button>
+                <button class="button operator" onclick="remove()">DEL</button>
+                <button id="percent" value="%" onclick="persign();history()" class="button operator">%</button>
+                <button id="divid" value="/" onclick="divid()" class="button operator">/</button>
+            </div>
+            <div>
+                <button value="7" id="btnseven" onclick="btnseven();history()" class="button ">7</button>
+                <button value="8" id="btneight" onclick="btneight();history()" class="button ll">8</button>
+                <button id="btnno" value="9" onclick="btnnine();history()" class="button">9</button>
+                <button id="mutiply" value="*" onclick="mutiply();history()" class="button operator">*</button>
+            </div>
+            <div>
+                <button id="btnfour" onclick="btnfour();history()" value="4" class="button">4</button>
+                <button id="btnfive" onclick="btnfive();history()" value="5" class="button">5</button>
+                <button id="btnsix" onclick="btnsix();history()" value="6" class="button">6</button>
+                <button id="minus" onclick="minus();history()" value="-" class="button operator">-</button>
+            </div>
+            <div>
+                <button id="btnone" onclick="btnone();history()" value="1" class="button">1</button>
+                <button id="btntwo" onclick="btntwo();history()" value="2" class="button">2</button>
+                <button id="btnthree" onclick="btnthree();history()" value="3" class="button">3</button>
+                <button id="plus" onclick="plus();history()" value="+" class="button operator">+</button>
+            </div>
+
+            <div>
+                <button id="doublezero" onclick="doublezero();history()" value="00" class="button">00</button>
+                <button id="zero" onclick="zero();history()" value="0" class="button">0</button>
+                <button id="decimal" onclick="decimal();history()" value="." class="button">.</button>
+                <button class="button equalBtn" onclick="abc();equal();final()">=</button>
+            </div>
+        </div>
+        <!-- <div class="lastdiv" id="maiiin">history<br></div> -->
+    </div>
+
+        
+   
+    
+</body>
+</html>

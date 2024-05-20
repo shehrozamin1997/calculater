@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.inp {
+    width: 100% !important;
+    height: 80px !important;
+}
+
+body {
+    width: 100% !important;
+    height: 100vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    
+    background-color: hsl(180, 20%, 12%);
+    
+}
+
+.calculator {
+    /* border: 0px solid #ff000d !important; */
+    padding: 20px !important;
+    border-radius: 15px !important;
+    background: transparent !important;
+    box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.5) !important;
+}
+
+.screen {
+    width: 320px !important;
+    border: none !important;
+    padding: 24px !important;
+    margin: 10px !important;
+    background: transparent !important;
+    box-shadow: 0px 3px 15px white !important;
+    font-size: 40px !important;
+    text-align: right !important;
+    cursor: pointer !important;
+    color: #e6bb1e !important;
+}
+
+.screen::placeholder {
+    color: #be5757 !important;
+}
+
+button {
+    border: none !important;
+    width: 60px !important;
+    height: 60px !important;
+    margin: 10px !important;
+    border-radius: 15px!important;
+    background: rgba(22, 21, 21, 0.658)  !important;
+    color: #ffffff !important;
+    font-size: 20px !important;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.514) !important;
+    cursor: pointer !important;
+}
+
+.equalBtn {
+    background-color: #fb7c14 !important;
+}
+
+.operator {
+    color: #a5968a !important;
+}
+
+.history {
+    background-color: transparent !important;
+}
+
+.input {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.historybar {
+    height: 30px !important;
+    color: rgb(255, 255, 255) !important;
+    font-size: 20px !important;
+    border: none !important;
+    background-color: transparent !important;
+    font-weight: 560 !important;
+    text-align: right !important;
+    margin-top: 0px !important;
+}
+
+.history-group {
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 65%;
+    backdrop-filter: blur(10px) saturate(180%);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    transition: all 400ms ease-in-out;
+    text-align: right;
+}
